@@ -1,3 +1,92 @@
+                                           AULA 1
+#revisão de estruturas condicionais - if
+#operadores lógicos:
+#and = e
+#or = ou
+#not = não
+
+salario = float(input ("Informe Aqui o seu salário: "))
+if salario < 5000: #expressão lógica
+   print("Esse salário não condiz com a profissão de um engenheiro de software")
+if salario >= 10000:
+   print ("Esse salário é razoável... mas ainda baixo para um engenheiro de software")
+else:
+   print ("Ainda pode melhorar muito...")
+
+===================================================================================================
+
+                                           AULA 2
+print ("Cálculo de desconto do IRRF")
+salário = float(input("informe seu salário: "))
+
+if salário < 3000:
+ desconto = 0
+elif salário >= 3000 and salário < 5000:
+ desconto = salário * 5 / 100
+elif salário >= 5000 and salário < 7000:
+ desconto = salário * 10 / 100
+elif salário >= 7000 and salário < 9000:
+ desconto = salário * 15 / 100
+else:
+  desconto = salário * 27.5 / 100
+print ("Seu desconto de imposto de renda é: ", desconto)
+print ("Salário bruto: ", salário)
+print ("Salário liquido..", salário - desconto) 
+
+=====================================================================================================
+
+                                         AULA 3
+#for <Váriavel de controle> in <lista de argumentos>:
+
+"""
+onde:
+<variável de controle> = váriável simples (por exemplo, 1)
+
+<lista de argumentos> = qualquer sequência ou conjunto de valores, de qualquer tipo
+"""
+#exemplo de contador utilizando for
+for i in range(1,11):
+    print(i)
+
+#exemplo que exibe todas as letras de uma string
+time = "flamengo é bom"
+for x in time:
+    print(x)
+for x in range(0, len(time)):
+    print(time[x])
+
+times = ["Loud", "Pain", "Furia"]
+for x in range(len(times)-1, -1, -1):
+    print(times[x])
+
+#while  <teste lógico>:
+""""
+onde:
+<teste lógico> - qualquer expressão lógica que retorne apenas True ou False
+"""   
+# Receba n valores inteiros do usuário, até que o valor 0 seja informado.
+# ao receber o valor 0, mostre o somatório e a média dos valores informados
+
+somatorio = 0
+totvalores = 0
+valor = 1
+
+while valor != 0:
+    valor = int(input("Informe um valor inteiro (0 para sair): "))
+    if valor != 0:
+        somatorio = somatorio + valor
+        totvalores = totvalores + 1
+    else:
+        break
+    
+print("O somatorio dos valores é: ", somatorio)
+print("A média dos valores informados é: ", int(somatorio/totvalores)) 
+
+=================================================================================================
+
+                                                AULA 4
+
+
 # exemplo de uso de lista em pithon
 # receber do usuarios 5 nomes e, ao final, exibir 5 nomes
 
@@ -10,3 +99,4 @@ print("os nomes informados foram...")
 for o in nomes_digitados:
     print(o)
     
+===================================================================================================
